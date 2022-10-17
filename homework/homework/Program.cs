@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.CSharp.RuntimeBinder;
 using System.Runtime.Intrinsics.X86;
-new Homework().Task_5();
+new Homework().Task_3();
 class Homework
 {
     public void Task_1()
@@ -41,7 +41,7 @@ class Homework
         var age = Console.ReadLine();
         string s = "\"How old are you\",-policemen asked.";
         Console.WriteLine(s);
-        Console.WriteLine('"' + age + '"' + ',' + '-' + name + " answered.");
+        Console.WriteLine($"\"{age}\",-{name} answered.") ;
     }
     public void Task_4()
     {
