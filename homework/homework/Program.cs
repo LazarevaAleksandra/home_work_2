@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Intrinsics.X86;
 
-new Homework_2().Task_10();
+new Homework_2().Task_9();
 class Homework
 {
     public void Task_1()
@@ -194,23 +194,5 @@ class Homework_2
         int i1 = b;
         short s = (short)i;
     }
-    public void Task_10()
-    {
-        Console.WriteLine("Traffic Ligts");
-        var color = Console.ReadLine();
-        if (color == "green")
-        {
-            Console.WriteLine("Go!");
-        }
-        else if (color == "yellow")
-        {
-            Console.WriteLine("Wait");
-        }
-        else if (color == "red")
-        {
-            Console.WriteLine("Stop");
-        }
-        else
-            Console.WriteLine("Stop!");
-    }
+    
 }
