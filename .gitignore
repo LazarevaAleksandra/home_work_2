@@ -1,0 +1,9 @@
+# Files built by Visual Studio
+*.obj
+*.bin
+*.log
+*.scc
+# Visual Studio temp something
+.vs/
+# NuGet Packages
+**/packages/
