@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ﻿using System.Runtime.Intrinsics.X86;
 
 new Homework_2().Task_9();
+=======
+﻿
+using Microsoft.CSharp.RuntimeBinder;
+using System.Runtime.Intrinsics.X86;
+new Homework().Task_4();
+>>>>>>> master
 class Homework
 {
     public void Task_1()
@@ -39,7 +46,8 @@ class Homework
         Console.WriteLine("Enter you age");
         var age = Console.ReadLine();
         string s = "\"How old are you\",-policemen asked.";
-        Console.WriteLine('"' + age + '"' + ',' + '-' + name + " answered.");
+        Console.WriteLine(s);
+        Console.WriteLine($"\"{age}\",-{name} answered.") ;
     }
     public void Task_4()
     {
@@ -47,28 +55,29 @@ class Homework
         string b = "out";
         string c = "touch";
         string d = "faith";
-        string f = a + " " + b + " " + c + " " + d;
-        string con = string.Concat(f);
+        string con = string.Concat(a, " " , b ," ", c, " " , d);
         Console.WriteLine(con);
-        string[] j = new string[] { a, b, c, d };
-        string j1 = string.Join(" ", j);
+        string j1 = string.Join(" ", a, b, c, d);
         Console.WriteLine(j1);
     }
     public void Task_5()
     {
         string text = "Good day";
+        string text1;
         string text2;
-        text = text.Substring(2);
-        text2 = text.Substring(1);
-        string[] j = new string[] { text, text2 };
-        string j1 = string.Join(" ", j);
+        text1 = text.Substring(0,3);
+        text2 = text.Substring(text.Length -5);
+        string[] j = new string[] { text1, text2 };
+        string j1 = string.Join("",j);
         Console.WriteLine(j1);
 
     }
     public void Task_6()
     {
-        string a = "I'm reading a fascinating story";
-        a = a.Replace("fascinating", "boring");
+        string a = Console.ReadLine();
+        string epitet1 = "facsionality";
+        string epitet2 = "boring";
+        var d = a.Replace(epitet1, epitet2);
         Console.WriteLine(a);
 
     }
@@ -78,6 +87,7 @@ class Homework
         Console.WriteLine(a.ToUpper());
     }
 }
+<<<<<<< HEAD
 class Homework_2
 {
     public void Task_1()
@@ -196,3 +206,7 @@ class Homework_2
     }
     
 }
+=======
+
+
+>>>>>>> master
