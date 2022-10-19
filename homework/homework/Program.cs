@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.CSharp.RuntimeBinder;
 using System.Runtime.Intrinsics.X86;
-new Homework().Task_3();
+new Homework().Task_4();
 class Homework
 {
     public void Task_1()
@@ -49,11 +49,9 @@ class Homework
         string b = "out";
         string c = "touch";
         string d = "faith";
-        string f = a + " " + b + " " + c + " " + d;
-        string con = string.Concat(f);
+        string con = string.Concat(a, " " , b ," ", c, " " , d);
         Console.WriteLine(con);
-        string[] j = new string[] { a, b, c, d };
-        string j1 = string.Join(" ", j);
+        string j1 = string.Join(" ", a, b, c, d);
         Console.WriteLine(j1);
     }
     public void Task_5()
