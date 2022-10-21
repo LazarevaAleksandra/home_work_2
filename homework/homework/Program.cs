@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-﻿using System.Runtime.Intrinsics.X86;
 
-new Homework_2().Task_9();
-=======
-﻿
+﻿using System.Runtime.Intrinsics.X86;
 using Microsoft.CSharp.RuntimeBinder;
-using System.Runtime.Intrinsics.X86;
-new Homework().Task_4();
->>>>>>> master
+new Homework_2().Task_4();
 class Homework
 {
     public void Task_1()
@@ -87,8 +81,8 @@ class Homework
         Console.WriteLine(a.ToUpper());
     }
 }
-<<<<<<< HEAD
 class Homework_2
+    
 {
     public void Task_1()
     {
@@ -206,7 +200,7 @@ class Homework_2
     }
     
 }
-=======
 
 
->>>>>>> master
+
+
