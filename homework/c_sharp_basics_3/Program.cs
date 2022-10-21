@@ -63,9 +63,9 @@ class Homework_3
         int nextNumber = int.Parse(newNumber);
         int min = Math.Min(number, nextNumber);
         int max = Math.Max(number, nextNumber);
-        while (min < max)
+        while (min <= max)
         {
-            min++;
+            
             if (min % 2 == 0 && min % 5 == 0)
             {
                 Console.WriteLine("tutti-frutti");
@@ -82,6 +82,9 @@ class Homework_3
             {
                 Console.WriteLine($"Number {min} can’t be divided on 2 or 5");
             }
+            min++;
         }
+        
     }
+   
 }
