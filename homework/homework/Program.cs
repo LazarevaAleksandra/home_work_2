@@ -1,7 +1,7 @@
 
 ﻿using System.Runtime.Intrinsics.X86;
 using Microsoft.CSharp.RuntimeBinder;
-new Homework().Task_5();
+new Assignment_for_grade_increase().Task_3();
 class Homework
 {
     public void Task_1()
@@ -198,6 +198,42 @@ class Homework_2
         short s = (short)i;
     }
     
+}
+class Assignment_for_grade_increase
+{
+    public void Task_1()
+    {
+        Console.WriteLine("Введите страну");
+        string country = Console.ReadLine();
+        Console.WriteLine("Введите ее столицу");
+        string capital = Console.ReadLine();
+        Console.WriteLine("Введите год основания");
+        int age = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Столица {capital} страны {country} была основана в {age} году");
+    }
+    public void Task_2()
+    {
+        Console.WriteLine("Введите строку");
+        string text = Console.ReadLine();
+        string piece_of_text = text.Substring(5);
+        Console.WriteLine("Введите любое слово");
+        string word = Console.ReadLine();
+        string new_text = string.Join("", word, piece_of_text);
+        Console.WriteLine(new_text);
+    }
+    public void Task_3()
+    {
+        Console.WriteLine("Введите строку");
+        string new_string = Console.ReadLine();
+        if (new_string.Length > 12)
+        {
+            Console.WriteLine($"\"{new_string}\" is short");
+        }
+        else
+        {
+            Console.WriteLine($"\"{new_string}\" in long");
+        }
+    }
 }
 
 
