@@ -1,7 +1,7 @@
 
 ﻿using System.Runtime.Intrinsics.X86;
 using Microsoft.CSharp.RuntimeBinder;
-new Homework_2().Task_4();
+new Homework().Task_5();
 class Homework
 {
     public void Task_1()
@@ -45,24 +45,23 @@ class Homework
     }
     public void Task_4()
     {
-        string a = "Reach";
-        string b = "out";
-        string c = "touch";
-        string d = "faith";
-        string con = string.Concat(a, " " , b ," ", c, " " , d);
+        Console.WriteLine("Введите 4 слова");
+        string a = Console.ReadLine();
+        string b = Console.ReadLine();
+        string c = Console.ReadLine();
+        string d = Console.ReadLine();
+        string con = string.Concat(a, b, c, d);
         Console.WriteLine(con);
         string j1 = string.Join(" ", a, b, c, d);
         Console.WriteLine(j1);
     }
     public void Task_5()
     {
-        string text = "Good day";
-        string text1;
-        string text2;
-        text1 = text.Substring(0,3);
-        text2 = text.Substring(text.Length -5);
-        string[] j = new string[] { text1, text2 };
-        string j1 = string.Join("",j);
+        Console.WriteLine("Введите слово");
+        string text = Console.ReadLine();
+        string text1 = text.Substring(0,3);
+        string text2 = text.Substring(text.Length-5);
+        string j1 = string.Join("", text1, text2);
         Console.WriteLine(j1);
 
     }
