@@ -30,12 +30,12 @@ using System.Diagnostics;
 #endregion
 #region Task_3
 
-//var optionalFirst = new Homework_1().SeveralItems(Item, Price, discount);
-//var optionalSecond = new Homework_1().SeveralItems(secondItem, secondPrice, discount);
-//var optionalThird = new Homework_1().SeveralItems(thirdItem, thirdPrice, discount);
-//var requiredFirst = new Homework_1().SeveralItems(Item, Number, Price, discount);
-//var requiredSecond = new Homework_1().SeveralItems(secondItem, secondNumber, secondPrice, discount);
-//var requiredThird = new Homework_1().SeveralItems(thirdItem, thirdNumber, thirdPrice, discount);
+//var optionalFirst = new Homework_1().GetDiscountForNamedItem(Item, Price, discount);
+//var optionalSecond = new Homework_1().GetDiscountForNamedItem(secondItem, secondPrice, discount);
+//var optionalThird = new Homework_1().GetDiscountForNamedItem(thirdItem, thirdPrice, discount);
+//var requiredFirst = new Homework_1().GetDiscountForNamedItem(Item, 5 , Price, discount);
+//var requiredSecond = new Homework_1().GetDiscountForNamedItem(secondItem, 5 , secondPrice, discount);
+//var requiredThird = new Homework_1().GetDiscountForNamedItem(thirdItem, 5 , thirdPrice, discount);
 #endregion
 #region Task_4
 //Console.WriteLine("Enter 5 numbers");
@@ -74,53 +74,52 @@ using System.Diagnostics;
 //    Ребенок рисует дом. Стены и крышу. Но не прорисовывает мелкие детали (дверь, окна).
 
 #endregion
-public class Homework_1
-{
-    //public double GetDiscount(double numberOfItems, double price, double discount)
-    //{
-    //    var totalChek = numberOfItems * price - ((numberOfItems * price) * discount / 100);
-    //    return totalChek;
-    //}
+//public class Homework_1
+//{
+//    public double GetDiscount(double numberOfItems, double price, double discount)
+//    {
+//        var totalChek = numberOfItems * price - ((numberOfItems * price) * discount / 100);
+//        return totalChek;
+//    }
 
-    //public double GetDiscountItem(double Number, double Price, double secondNumber, double secondPrice, double thirdNumber, double thirdPrice, double discount)
-    //{
-    //    var totalfirst = new Homework_1().GetDiscount(Number, Price, discount);
-    //    var totalsecond = new Homework_1().GetDiscount(secondNumber, secondPrice, discount);
-    //    var totalthird = new Homework_1().GetDiscount(thirdNumber, thirdPrice, discount);
-    //    var totalPrice = totalfirst + totalsecond + totalthird;
-    //    return totalPrice;
-    //}
-    //public string GetDiscountForNamedItem(string Item, double Price, double discount, double Number = 5)
-    //{
-    //    var totalFirst = new Homework_1().GetDiscount(Number, Price, discount);
-    //    return $" Наименование:{Item}, количество:{Number}, цена:{Price}, цена со скидкой:{totalFirst}";
-    //}
-
-
-    //public double GetPerimeter(params double[] numberLenght)
-    //{
-    //    double perimeter = 0;
-    //    foreach (double number in numberLenght)
-    //    {
-    //    perimeter += number;
-    //    }
-    //    return perimeter;
-    //}
-
-    //public double GetAreaOfTriangleAndCircle(double firstLeg, double secondLeg)
-    //{
-    //    var triangleArea = firstLeg * secondLeg / 2;
-    //    return triangleArea;
-    //}
-    //public double GetAreaOfTriangleAndCircle(double radius)
-    //{
-    //    var cicleArea = radius * 2 * Math.PI;
-    //    return cicleArea;
-
-    //}
+//    public double GetDiscountItem(double Number, double Price, double secondNumber, double secondPrice, double thirdNumber, double thirdPrice, double discount)
+//    {
+//        var totalPrice = new Homework_1().GetDiscount(Number, Price, discount) +
+//            new Homework_1().GetDiscount(secondNumber, secondPrice, discount) +
+//            new Homework_1().GetDiscount(thirdNumber, thirdPrice, discount);
+//        return totalPrice;
+//    }
+//    public string GetDiscountForNamedItem(string Item, double Price, double discount, double Number = 5)
+//    {
+//        var totalFirst = new Homework_1().GetDiscount(Number, Price, discount);
+//        return $" Наименование:{Item}, количество:{Number}, цена:{Price}, цена со скидкой:{totalFirst}";
+//    }
 
 
-}
+//    public double GetPerimeter(params double[] numberLenght)
+//    {
+//        double perimeter = 0;
+//        foreach (double number in numberLenght)
+//        {
+//            perimeter += number;
+//        }
+//        return perimeter;
+//    }
+
+//    public double GetAreaOfTriangleAndCircle(double firstLeg, double secondLeg)
+//    {
+//        var triangleArea = firstLeg * secondLeg / 2;
+//        return triangleArea;
+//    }
+//    public double GetAreaOfTriangleAndCircle(double radius)
+//    {
+//        var cicleArea = radius * 2 * Math.PI;
+//        return cicleArea;
+
+//    }
+//}
+
+
 
 
 
