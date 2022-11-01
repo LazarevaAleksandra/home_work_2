@@ -10,41 +10,37 @@ namespace CSharpOOP2
     public class Car //Task_1
     {
         public string Brand; //Task_2
-        public string _Color;
-        public int YearOfIssue;
-        public double _DiskSize;
-        public double _Price;
+        //public string Color;
+        //public int YearOfIssue;
+        //public double DiskSize;
+        //public double Price;
         public static string Type { get; } ="Transport";  //Task_17
 
         public static void GreetCar() => Console.WriteLine("Hello!"); //Task_18
 
-        public double _defaultPrice = 30.000;  //Task_13
+        public double defaultPrice;  //Task_13
         public double Price
         {
             get
             {
-                return _Price;
+                return defaultPrice;
             }
             set
             {
-                _Price = _defaultPrice;
+                defaultPrice = value;
             }
         }
-        /*public double YearOfIssue { get => _YearOfIssue = 2000; } *///Task_14
-        public double DiskSize { set => _DiskSize = 7; }   //Task_14
+        public double YearOfIssue { get => YearOfIssue = 2000; } //Task_14
+        public double DiskSize { set => DiskSize = 7; }   //Task_14
 
         public string Color { get; internal set; } //Task_16
 
 
         public void CheckBrand() //Task_3
         {
-            if (Brand.Equals("BMW"))
+            if (Brand.Equals("BMW") || Brand.Equals("Audi"))
             {
-                Console.WriteLine("Car brand - BMW");
-            }
-            else if (Brand.Equals("Audi"))
-            {
-                Console.WriteLine("Car brand - Audi");
+                Console.WriteLine($"Car brand - {Brand}");
             }
             else
             {
