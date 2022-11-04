@@ -20,11 +20,11 @@
 
 //cylinder.GetShape();
 
-Student student = new Student();
-student.Name = "Alex";
-student.Age = 20;
+//Student student = new Student();
+//student.Name = "Alex";
+//student.Age = 20;
 
-student.InfoOfStudent();
+//student.InfoOfStudent();
 
 
 

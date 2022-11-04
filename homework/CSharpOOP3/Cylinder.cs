@@ -8,7 +8,6 @@ namespace CSharpOOP3
 {
     internal class Cylinder : Shape
     {
-        private string _name;
         private double _height;
         private double _ragius;
 
@@ -21,7 +20,7 @@ namespace CSharpOOP3
 
         public override double GetVolume()
         {
-            double cylinderVolume = Math.PI * _ragius * _ragius * _height;
+            double cylinderVolume = Math.PI * Math.Pow(_ragius, 2) * _height;
             return cylinderVolume;
         }
 

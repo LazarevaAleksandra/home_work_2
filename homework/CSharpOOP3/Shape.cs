@@ -9,7 +9,7 @@ namespace CSharpOOP3
 {
     abstract class Shape
     {
-        private string _name;
+        public string _name;
 
         public Shape(string name) => _name = name;
 

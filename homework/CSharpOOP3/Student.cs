@@ -4,12 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpOOP3
-{
-    internal class Student
-    {
-    }
-}
 struct Student
 {
     public string Name;
@@ -20,6 +14,7 @@ struct Student
         Name = name;
         Age = age;
     }
+
     public void InfoOfStudent()
     {
         Console.WriteLine($"Name: {Name}, age: {Age}");

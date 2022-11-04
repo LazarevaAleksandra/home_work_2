@@ -8,7 +8,6 @@ namespace CSharpOOP3
 {
     internal class Ball : Shape
     {
-        private string _name;
         private double _radius;
 
         public Ball(string name, double radius) : base(name)
@@ -19,7 +18,7 @@ namespace CSharpOOP3
 
         public override double GetVolume()
         {
-            double ballVolume = 1.33 * Math.PI * _radius * _radius * _radius;
+            double ballVolume = ((4 * Math.PI * Math.Pow(_radius, 3)) / 3);
             return ballVolume;
         }
 

@@ -10,7 +10,6 @@ namespace CSharpOOP3
 {
     internal class Pyramid : Shape
     {
-        private string _name;
         private double _height;
         private double _s;
 
@@ -20,9 +19,10 @@ namespace CSharpOOP3
             _height = height;
             _s = s;
         }
+
         public override double GetVolume()
         {
-            double pyramidVolume = 0.33 * _height * _s ;
+            double pyramidVolume = (_height * _s) /3 ;
             return pyramidVolume;
         }
 
