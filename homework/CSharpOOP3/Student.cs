@@ -20,3 +20,6 @@ struct Student
         Console.WriteLine($"Name: {Name}, age: {Age}");
     }
 }
+
+
+
