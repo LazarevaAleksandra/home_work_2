@@ -11,7 +11,7 @@ namespace CSharpOOP2
     {
         public string Brand; //Task_2
         //public string Color;
-        //public int YearOfIssue;
+        public int YearOfIssue;
         //public double DiskSize;
         //public double Price;
         public static string Type { get; } ="Transport";  //Task_17
@@ -30,8 +30,8 @@ namespace CSharpOOP2
                 defaultPrice = value;
             }
         }
-        public double YearOfIssue { get => YearOfIssue = 2000; } //Task_14
-        public double DiskSize { set => DiskSize = 7; }   //Task_14
+       /* public double YearOfIssue { get => YearOfIssue = 2000; } *///Task_14
+        public double DiskSize { get; set; }   //Task_14
 
         public string Color { get; internal set; } //Task_16
 

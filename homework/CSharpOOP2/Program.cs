@@ -27,7 +27,7 @@ Car defaultItem = new Car { Brand = "BMW", Color = "Black", YearOfIssue = 2022, 
 Console.WriteLine($"Car cost: {defaultItem.Price}");
 
 Console.WriteLine(defaultItem.YearOfIssue); //Task_15  
-Console.WriteLine(defaultItem.DiskSize); //Error Line
+/*Console.WriteLine(defaultItem.DiskSize);*/ //Error Line
 
 var type = Car.Type; //Task_17
 Car.GreetCar(); //Task_18
