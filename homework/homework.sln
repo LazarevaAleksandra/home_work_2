@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP2", "CSharpOOP2\CS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP3", "CSharpOOP3\CSharpOOP3.csproj", "{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLinq", "CSharpLinq\CSharpLinq.csproj", "{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
