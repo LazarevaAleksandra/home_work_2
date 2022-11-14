@@ -7,19 +7,19 @@
 
 //foreach (int number in newList)
 //{
-//    Console.Write("{0} ", number);
+//    Console.Write(string.Join(" ", number));
 //}
 #endregion
 #region Task_2
 //var numbers = new List<int> { 7, -7, 8, -9, 10, 11, -12, -13, 14, -15 };
 
-//var newList = numbers.Where(x => x < 10).ToList();
+//var newList = numbers.Where(x => x < 10 && x < 0).ToList();
 
 //Console.WriteLine("Resulting collection:");
 
 //foreach (int number in newList)
 //{
-//    Console.Write("{0} ", number);
+//    Console.Write(string.Join(" ", number));
 //}
 #endregion
 #region Task_3
@@ -31,7 +31,7 @@
 
 //foreach (string name in newList)
 //{
-//    Console.Write("{0}  ", name);
+//    Console.Write(string.Join(" ", name));
 //}
 #endregion
 #region Task_4
@@ -52,27 +52,27 @@
 //Console.WriteLine("Enter the string");
 //string newString = Console.ReadLine();
 
-//var list = new List<string>(newString.Split(" ".ToCharArray()));
+//var list = new List<string>(newString.Split());
 
-//var newList = list.Where(l =>l.Contains(l.ToUpper()));
+//var newList = list.Where(l => l.Equals(l.ToUpper()));
 
 //Console.WriteLine("Resulting collection:");
 
 //foreach (string s in newList)
 //{
-//    Console.Write("{0} ", s);
+//    Console.Write(string.Join(" ", s));
 //}
 #endregion
 #region Task_6
 //var numbers = new List<int> { 7, 6, 3, 7, 5, 3, 1, 4, 6, 1 };
 
-//var chekNumbers = numbers.Distinct().OrderByDescending(n => n);
+//var chekNumbers = numbers.Distinct().OrderByDescending(n => n).Reverse();
 
 //Console.WriteLine("Resulting collection:");
 
 //foreach (int number in chekNumbers)
 //{
-//    Console.Write("{0} ", number);
+//    Console.Write(string.Join(" ", number));
 //}
 #endregion
 #region Task_7
@@ -103,15 +103,20 @@
 //}
 #endregion
 #region Task_9
-//using CSharpOOP2;
+using CSharpOOP2;
 
-//Car bmw = new Car("BMW", 2022);
-//Car audi = new Car("Audi", 2020);
-//Car lamborghini = new Car("Lamborghini", 2021);
+Car bmw = new Car("BMW", 2022);
+Car audi = new Car("Audi", 2020);
+Car lamborghini = new Car("Lamborghini", 2021);
 
-//var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
+var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
 
-//var newCar = cars.Select(c => new Car("VW", 2022)).ToList();
+var newCar = cars.Select(c => new Car("VW", 2022)).ToList();
+foreach(var c in newCar)
+{
+    Console.WriteLine(c);
+}
+
 #endregion
 #region Task_10
 //using CSharpOOP2;
