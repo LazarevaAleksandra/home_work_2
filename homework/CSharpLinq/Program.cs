@@ -103,15 +103,11 @@
 //}
 #endregion
 #region Task_9
-//using CSharpOOP2;
+using CSharpOOP2;
 
-//Car bmw = new Car("BMW", 2022);
-//Car audi = new Car("Audi", 2020);
-//Car lamborghini = new Car("Lamborghini", 2021);
+var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
 
-//var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
-
-//var newCar = cars.Select(c => new Car("VW", 2022)).ToList();
+var newCar = cars.Select(c => new Car(c , 2022)).ToList();
 #endregion
 #region Task_10
 //using CSharpOOP2;
