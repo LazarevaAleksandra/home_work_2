@@ -71,44 +71,38 @@
 //Console.WriteLine();
 #endregion
 #region Task_4
-//using System.Collections.Generic;
-//using System.Data;
+using System.Collections.Generic;
+using System.Data;
+List<Citizen> list = new List<Citizen>();
 
-//public class Citizen
-//{
-//    public string? Name;
-//    public string? Surname;
-//    public string? Street;
-//    public int Home;
-//    public DateTime birthDate = new DateTime();
+list.Add(new Citizen() { Name = "Brian", Surname = "Crawford", Street = "Belskogo", Home = 39, birthDate = new DateTime(1994, 5, 2) });
+list.Add(new Citizen() { Name = "Larry", Surname = "Bryant", Street = "Yankovskogo", Home = 11, birthDate = new DateTime(1984, 11, 20) });
+list.Add(new Citizen() { Name = "Andre", Surname = "Murphy", Street = "Mavra", Home = 5, birthDate = new DateTime(1998, 4, 13) });
+list.Add(new Citizen() { Name = "Peter", Surname = "Mendoza", Street = "Lobanka", Home = 89, birthDate = new DateTime(1996, 5, 10) });
+list.Add(new Citizen() { Name = "Daniel", Surname = "Park", Street = "Yankovskogo", Home = 11, birthDate = new DateTime(2010, 1, 15) });
+list.Add(new Citizen() { Name = "Charles", Surname = "Ray", Street = "Belskogo", Home = 39, birthDate = new DateTime(2006, 2, 8) });
+list.Add(new Citizen() { Name = "Matthew", Surname = "Wolfe", Street = "Mazurova", Home = 6, birthDate = new DateTime(1997, 7, 7) });
+list.Add(new Citizen() { Name = "Christian", Surname = "Lawrence", Street = "Mavra", Home = 5, birthDate = new DateTime(2000, 9, 14) });
 
-//    static void Main(string[] args)
-//    {
-//        List<Citizen> list = new List<Citizen>();
+List<Citizen> newList = list.FindAll(x => x.GetAge(x.birthDate) >= 18);
+newList.Sort((a, b) => a.Street.CompareTo(b.Name));
 
-//        list.Add(new Citizen() { Name = "Brian", Surname = "Crawford", Street = "Belskogo", Home = 39, birthDate = new DateTime(1994, 5, 2) });
-//        list.Add(new Citizen() { Name = "Larry", Surname = "Bryant", Street = "Yankovskogo", Home = 11, birthDate = new DateTime(1984, 11, 20) });
-//        list.Add(new Citizen() { Name = "Andre", Surname = "Murphy", Street = "Mavra", Home = 5, birthDate = new DateTime(1998, 4, 13) });
-//        list.Add(new Citizen() { Name = "Peter", Surname = "Mendoza", Street = "Lobanka", Home = 89, birthDate = new DateTime(1996, 5, 10) });
-//        list.Add(new Citizen() { Name = "Daniel", Surname = "Park", Street = "Yankovskogo", Home = 11, birthDate = new DateTime(2010, 1, 15) });
-//        list.Add(new Citizen() { Name = "Charles", Surname = "Ray", Street = "Belskogo", Home = 39, birthDate = new DateTime(2006, 2, 8) });
-//        list.Add(new Citizen() { Name = "Matthew", Surname = "Wolfe", Street = "Mazurova", Home = 6, birthDate = new DateTime(1997, 7, 7) });
-//        list.Add(new Citizen() { Name = "Christian", Surname = "Lawrence", Street = "Mavra", Home = 5, birthDate = new DateTime(2000, 9, 14) });
+public class Citizen
+{
+    public string? Name;
+    public string? Surname;
+    public string? Street;
+    public int Home;
+    public DateTime birthDate = new DateTime();
 
-//        list.Sort(delegate (Citizen street1, Citizen street2)
-//        { return street1.Street.CompareTo(street2.Street); });
-
-//        Console.WriteLine("List of voters:");
-//        foreach (Citizen i in list)
-//        {
-//            int age = DateTime.Now.Year - i.birthDate.Year;
-//            if (age > 18)
-//            {
-//                Console.WriteLine($"{i.Name} {i.Surname}, {i.Street}, {i.Home}, {i.birthDate}");
-//            }
-//        }
-//    }
-//}
+    public int GetAge(DateTime birthDate)
+    {
+        DateTime dateTime = new DateTime(1, 2, 3);
+        var time = (DateTime.Now - birthDate).Duration();
+        int age = (dateTime + time).Year - 1;
+        return age;
+    }
+}
 #endregion
 #region Task_5
 //Console.WriteLine("Enter 5 countries and their capitals");
