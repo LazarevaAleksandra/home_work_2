@@ -1,31 +1,6 @@
 ﻿using CSharpException;
 
 Triangle triangle = new Triangle();
-
-//Task_1
-//try
-//{
-//    Console.WriteLine("Enter the lengths of all sides:");
-//    triangle.OneLength = int.Parse(Console.ReadLine());
-//    triangle.TwoLenght = int.Parse(Console.ReadLine());
-//    triangle.ThreeLenght = int.Parse(Console.ReadLine());
-
-//    triangle.SideLengthCheck();
-//}
-//catch (FormatException ex)
-//{
-//    Console.WriteLine(ex.Message);
-//}
-//catch(Exception ex)
-//{
-//    Console.WriteLine(ex.Message);
-//}
-//finally
-//{
-//    Console.WriteLine("Condition violation!");
-//}
-
-//Task_2
 try
 {
     Console.WriteLine("Enter the lengths of all sides:");
@@ -33,13 +8,40 @@ try
     triangle.TwoLenght = int.Parse(Console.ReadLine());
     triangle.ThreeLenght = int.Parse(Console.ReadLine());
 
-    triangle.CheckingValuesForZero();
+    triangle.SideLengthCheck(triangle.OneLength, triangle.TwoLenght, triangle.ThreeLenght);
 }
 catch (FormatException ex)
 {
-    Console.WriteLine(ex.Message);  
+    Console.WriteLine(ex.Message);
 }
-catch(Exception ex)
+catch (NullReferenceException)
+{
+}
+catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
 }
+finally
+{
+    Console.WriteLine("End of the program!");
+}
+
+try
+{
+    Console.WriteLine("Enter the lengths of all sides:");
+    triangle.OneLength = int.Parse(Console.ReadLine());
+    triangle.TwoLenght = int.Parse(Console.ReadLine());
+    triangle.ThreeLenght = int.Parse(Console.ReadLine());
+
+    triangle.CheckingValuesForZero(triangle.OneLength, triangle.TwoLenght, triangle.ThreeLenght);
+}
+catch (FormatException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
+

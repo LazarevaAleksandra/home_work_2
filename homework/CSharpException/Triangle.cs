@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CSharpException
 {
     public class Triangle
@@ -22,24 +17,30 @@ namespace CSharpException
             ThreeLenght = threeLenght;
         }
 
-        public void SideLengthCheck()
+        public void SideLengthCheck(int OneLength, int TwoLenght, int ThreeLenght)
         {
             if (OneLength < TwoLenght + ThreeLenght
-                || TwoLenght < OneLength + ThreeLenght 
-                || ThreeLenght < OneLength + TwoLenght) 
+                || TwoLenght < OneLength + ThreeLenght
+                || ThreeLenght < OneLength + TwoLenght)
             {
                 throw new Exception("The length of a side is greater than the sum of the other two!");
             }
+            else
+            {
+                Console.WriteLine("The length of a side is less than the sum of the other two!");
+            }
         }
 
-        public void CheckingValuesForZero()
+        public void CheckingValuesForZero(int OneLength, int TwoLenght, int ThreeLenght)
         {
-            if (OneLength != 0
-                || TwoLenght != 0
-                || ThreeLenght != 0)
-            {
-                throw new Exception("The side length is zero!");
-            }
+            while (OneLength != 0
+                    || TwoLenght != 0
+                    || ThreeLenght != 0)
+                {
+                    throw new Exception("The side length is zero!");
+                    Console.Write("Enter the lengths of all sides:");
+                }
+               Console.WriteLine("The side lenght not equal to zero.");
         }
     }
 }
