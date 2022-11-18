@@ -28,7 +28,7 @@ finally
 }
 
 try
-{
+{   
     triangle.CheckingValuesForZero(triangle.OneLength, triangle.TwoLenght, triangle.ThreeLenght);
 }
 catch (FormatException ex)

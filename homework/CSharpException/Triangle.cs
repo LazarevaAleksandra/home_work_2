@@ -43,7 +43,11 @@ namespace CSharpException
                 if (OneLength == 0 || TwoLenght == 0 || ThreeLenght == 0)
                 {
                     throw new Exception("The side length is zero!");
-                }               
+                }   
+                else if (OneLength > 0 || TwoLenght > 0 || ThreeLenght > 0) 
+                {
+                    break;
+                }
             }
             while (true);
         }
