@@ -33,14 +33,19 @@ namespace CSharpException
 
         public void CheckingValuesForZero(int OneLength, int TwoLenght, int ThreeLenght)
         {
-            while (OneLength != 0
-                    || TwoLenght != 0
-                    || ThreeLenght != 0)
+            do
+            {
+                Console.WriteLine("Enter the lengths of all sides:");
+                OneLength = int.Parse(Console.ReadLine());
+                TwoLenght = int.Parse(Console.ReadLine());
+                ThreeLenght = int.Parse(Console.ReadLine());
+
+                if (OneLength == 0 || TwoLenght == 0 || ThreeLenght == 0)
                 {
                     throw new Exception("The side length is zero!");
-                    Console.Write("Enter the lengths of all sides:");
-                }
-               Console.WriteLine("The side lenght not equal to zero.");
+                }               
+            }
+            while (true);
         }
     }
 }
