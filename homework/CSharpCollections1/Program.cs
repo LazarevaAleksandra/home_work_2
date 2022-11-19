@@ -73,6 +73,8 @@
 #region Task_4
 using System.Collections.Generic;
 using System.Data;
+using System.Net.Sockets;
+
 List<Citizen> list = new List<Citizen>();
 
 list.Add(new Citizen() { Name = "Brian", Surname = "Crawford", Street = "Belskogo", Home = 39, birthDate = new DateTime(1994, 5, 2) });
@@ -84,8 +86,14 @@ list.Add(new Citizen() { Name = "Charles", Surname = "Ray", Street = "Belskogo",
 list.Add(new Citizen() { Name = "Matthew", Surname = "Wolfe", Street = "Mazurova", Home = 6, birthDate = new DateTime(1997, 7, 7) });
 list.Add(new Citizen() { Name = "Christian", Surname = "Lawrence", Street = "Mavra", Home = 5, birthDate = new DateTime(2000, 9, 14) });
 
-List<Citizen> newList = list.FindAll(x => x.GetAge(x.birthDate) >= 18);
-newList.Sort((a, b) => a.Street.CompareTo(b.Name));
+Console.WriteLine("Enter street:");
+string newStreet = Console.ReadLine();
+
+List<Citizen> newList = list.FindAll(x => x.GetAge(x.birthDate) >= 18).
+    FindAll(x => x.Address(x.Street).Contains(newStreet));
+newList.Sort((a, b) => a.Name.CompareTo(b.Name));
+
+Console.WriteLine(newList);
 
 public class Citizen
 {
@@ -101,6 +109,10 @@ public class Citizen
         var time = (DateTime.Now - birthDate).Duration();
         int age = (dateTime + time).Year - 1;
         return age;
+    }
+    public string Address(string street)
+    {
+        return Street;
     }
 }
 #endregion
