@@ -3,27 +3,23 @@ namespace CSharpException
 {
     public class Triangle
     {
-        public int OneLength { get; set; }
-        public int TwoLenght { get; set; }
-        public int ThreeLenght { get; set; }
+        private int _oneLenght;
+        private int _twoLenght;
+        private int _threeLenght;
 
-        public Triangle()
-        {
-        }
-        public Triangle(int oneLength, int twoLenght, int threeLenght)
-        {
-            OneLength = oneLength;
-            TwoLenght = twoLenght;
-            ThreeLenght = threeLenght;
-        }
+        public int OneLenght { get => _oneLenght; set => _oneLenght = value; }
+
+        public int TwoLenght { get => _twoLenght; set => _twoLenght = value; }
+
+        public int ThreeLenght { get => _threeLenght; set => _threeLenght = value; }
 
         public void SideLengthCheck(int OneLength, int TwoLenght, int ThreeLenght)
         {
             if (OneLength < TwoLenght + ThreeLenght
                 || TwoLenght < OneLength + ThreeLenght
-                || ThreeLenght < OneLength + TwoLenght)
+                || ThreeLenght < OneLength + TwoLenght) 
             {
-                throw new Exception("The length of a side is greater than the sum of the other two!");
+                throw new ExceptionForTriangle("The length of a side is greater than the sum of the other two!");
             }
             else
             {
@@ -31,25 +27,16 @@ namespace CSharpException
             }
         }
 
-        public void CheckingValuesForZero(int OneLength, int TwoLenght, int ThreeLenght)
+        public int CheckingValuesForZero(string value)
         {
-            do
+            if (int.Parse(value) == 0)
             {
-                Console.WriteLine("Enter the lengths of all sides:");
-                OneLength = int.Parse(Console.ReadLine());
-                TwoLenght = int.Parse(Console.ReadLine());
-                ThreeLenght = int.Parse(Console.ReadLine());
-
-                if (OneLength == 0 || TwoLenght == 0 || ThreeLenght == 0)
-                {
-                    throw new Exception("The side length is zero!");
-                }   
-                else if (OneLength > 0 || TwoLenght > 0 || ThreeLenght > 0) 
-                {
-                    break;
-                }
+                throw new ExceptionForTriangle("The side length is zero!");
             }
-            while (true);
-        }
+            else
+            {
+                return int.Parse(value);
+            }
+        }      
     }
 }
