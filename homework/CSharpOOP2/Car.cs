@@ -31,7 +31,7 @@ namespace CSharpOOP2
             }
         }
        /* public double YearOfIssue { get => YearOfIssue = 2000; } *///Task_14
-        public double DiskSize { set => DiskSize = 7; }   //Task_14
+        public double DiskSize { get; set; }   //Task_14
 
         public string Color { get; internal set; } //Task_16
 
