@@ -11,7 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP", "CSharpOOP\CSha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP2", "CSharpOOP2\CSharpOOP2.csproj", "{834A000B-5FF9-46A6-A026-6DF24CB06615}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP3", "CSharpOOP3\CSharpOOP3.csproj", "{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}"
+=======
+<<<<<<< HEAD
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCollections1", "CSharpCollections1\CSharpCollections1.csproj", "{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOOP3", "CSharpOOP3\CSharpOOP3.csproj", "{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}"
+>>>>>>> 96572764a392c4ed8a4f8d3596a5cf42f174b7da
+>>>>>>> c_sharp_collections_1
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +43,17 @@ Global
 		{834A000B-5FF9-46A6-A026-6DF24CB06615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{834A000B-5FF9-46A6-A026-6DF24CB06615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{834A000B-5FF9-46A6-A026-6DF24CB06615}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+		{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 96572764a392c4ed8a4f8d3596a5cf42f174b7da
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
