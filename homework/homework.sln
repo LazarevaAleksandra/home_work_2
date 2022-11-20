@@ -14,10 +14,14 @@ EndProject
 
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOOP3", "CSharpOOP3\CSharpOOP3.csproj", "{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}"
 EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLinq", "CSharpLinq\CSharpLinq.csproj", "{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}"
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpException", "CSharpException\CSharpException.csproj", "{6D989FBA-3586-4126-BA99-94B5A1570F60}"
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCollections1", "CSharpCollections1\CSharpCollections1.csproj", "{5C8C9B7D-FB1F-4836-A252-628C7E9CDAF7}"
 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOOP3", "CSharpOOP3\CSharpOOP3.csproj", "{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}"
+
 
 EndProject
 Global
@@ -52,10 +56,17 @@ Global
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C16BA1E9-BC88-49DF-A218-D79B25DFC3C3}.Release|Any CPU.Build.0 = Release|Any CPU
 
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DE2AA9-22FB-4EB0-811D-A19E95630D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+
+
 		{6D989FBA-3586-4126-BA99-94B5A1570F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D989FBA-3586-4126-BA99-94B5A1570F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D989FBA-3586-4126-BA99-94B5A1570F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D989FBA-3586-4126-BA99-94B5A1570F60}.Release|Any CPU.Build.0 = Release|Any CPU
+
 
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
