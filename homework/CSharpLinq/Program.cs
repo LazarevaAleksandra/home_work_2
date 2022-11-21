@@ -104,11 +104,19 @@
 #endregion
 #region Task_9
 
+
 //using CSharpOOP2;
 
 //var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
 
 //var newCar = cars.Select(c => new Car(c, 2022)).ToList();
+
+using CSharpOOP2;
+
+var cars = new List<string> { "BMW", "Audi", "Lamborghini" };
+
+var newCar = cars.Select(c => new Car(c , 2022)).ToList();
+
 #endregion
 #region Task_10
 //using CSharpOOP2;
