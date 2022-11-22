@@ -1,4 +1,11 @@
 ﻿#region Task_1
+
+//int[] array = new int[] { 4, 32, 89, 22, 56, 17, 7 };
+
+//Array.Sort(array);
+
+//Console.WriteLine("Array of even numbers:");
+
 //Random random = new Random();
 //int[] array = new int[10];
 
@@ -14,6 +21,7 @@
 
 //Console.WriteLine("\nArray of even numbers");
 
+
 //for (int i = 0; i < array.Length; i++)
 //{
 //    if (array[i] % 2 == 0)
@@ -22,6 +30,15 @@
 //    }
 //}
 
+//Console.WriteLine("\nArray of odd numbers:");
+
+//for (int j = 0; j < array.Length; j++)
+//{
+//    if (array[j] % 2 != 0)
+//    {
+//        Console.Write("{0} ", array[j]);
+
+
 //Console.WriteLine("\nArray of odd numbers");
 
 //for (int i = 0; i < array.Length; i++)
@@ -29,14 +46,22 @@
 //    if (array[i] % 2 != 0)
 //    {
 //        Console.Write("{0} ", array[i]);
+
 //    }
 //}
 #endregion
 #region Task_2
+
+//using System;
+
+//Random random = new Random();
+//double[] array = new double[10];
+
 //using System.Linq;
 
 //Random random = new Random();
 //int[] array = new int[10];
+
 
 //Console.WriteLine("Array:");
 
@@ -45,6 +70,16 @@
 //    array[i] = random.Next(-20, 20);
 //    Console.Write("{0} ", array[i]);
 //}
+
+//Console.WriteLine();
+
+//double max = array.Max();
+//double min = array.Min();
+//double difference = max - min;
+//Console.WriteLine($"Max = {max}");
+//Console.WriteLine($"Min = {min}");
+//Console.WriteLine($"Difference of max and min = {difference}");
+
 
 //Console.WriteLine();
 
@@ -73,7 +108,9 @@
 #region Task_4
 using System.Collections.Generic;
 using System.Data;
+
 using System.Net.Sockets;
+
 
 List<Citizen> list = new List<Citizen>();
 
@@ -90,7 +127,11 @@ Console.WriteLine("Enter street:");
 string newStreet = Console.ReadLine();
 
 List<Citizen> newList = list.FindAll(x => x.GetAge(x.birthDate) >= 18).
+
+FindAll(x => x.Address(x.Street).Contains(newStreet));
+
     FindAll(x => x.Address(x.Street).Contains(newStreet));
+
 newList.Sort((a, b) => a.Name.CompareTo(b.Name));
 
 Console.WriteLine(newList);
@@ -115,6 +156,7 @@ public class Citizen
         return Street;
     }
 }
+
 #endregion
 #region Task_5
 //Console.WriteLine("Enter 5 countries and their capitals");
