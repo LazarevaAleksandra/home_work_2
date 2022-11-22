@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    public interface GigantosaurusDecorator : IGigantosaurus
+    public interface IGigantosaurusDecorator : IGigantosaurus
     {
     }
 }

@@ -10,10 +10,18 @@ namespace FactoryMethod
 {
     public class UnicycleDeveloper : IDeveloper
     {
-        public UnicycleDeveloper(string name) : base() { }
+        private string _name;
+
+        public string Name { get => _name; set => _name = value; }
+
+        public UnicycleDeveloper(string name)
+        {
+            Name = name;
+        }
+
         public IVehicle Create()
         {
-            return new Unicycle("Unicycle");
+            return new Unicycle(_name);
         }
     }
 }

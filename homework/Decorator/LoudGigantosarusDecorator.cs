@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    public class LoudGigantosarusDecorator : GigantosaurusDecorator
+    public class LoudGigantosarusDecorator : IGigantosaurusDecorator
     {
         private IGigantosaurus _gigantosaurus;
 

@@ -9,11 +9,18 @@ namespace FactoryMethod
 {
     public class TruckDeveloper : IDeveloper
     {
-        public TruckDeveloper(string name) : base() { }
+        private string _name;
+
+        public string Name { get => _name; set => _name = value; }
+
+        public TruckDeveloper(string name)
+        {
+            Name = name;
+        }
 
         public IVehicle Create()
         {
-            return new Truck("Truck");
+            return new Truck(_name);
         }
     }
 }
