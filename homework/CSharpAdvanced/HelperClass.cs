@@ -26,10 +26,21 @@ namespace CSharpAdvanced
             }
         }
 
-        public static List<T> GetCarBrand<T>(this List<T> cars) where T : Car
+        public static void GetCarBrand(this Car oldcar)
         {
-            return cars.Where(x => x.Brand.Length > 2).ToList();
-
+            oldcar.Brand = "BMW";
+            switch (oldcar.Brand) 
+            {
+                case "Audi":
+                 Console.WriteLine("Car is Audi.");
+                    break;
+                case "VW":
+                    Console.WriteLine("Car is VW.");
+                    break;
+                default:
+                    Console.WriteLine("Other car");
+                    break;
+            }
         }
     }
 }

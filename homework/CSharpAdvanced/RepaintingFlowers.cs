@@ -1,18 +1,16 @@
 ﻿
-using System.Collections.Specialized;
-
 namespace CSharpAdvanced
 {
     public class RepaintingFlowers<T> where T : Flower
     {
-        public string GetNewColor<T>(T flower, string paint) where T : Flower
+        public string GetNewColor(T flower, string paint) 
         {
             flower.Color = paint;
             
             return $"New flower color: {flower.Color}";
         }
 
-        public double GetNewPrice<T>(T flower) where T : Flower
+        public double GetNewPrice(T flower)
         {
             return flower.Price * 1.15;
         }

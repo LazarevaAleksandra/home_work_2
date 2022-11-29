@@ -17,8 +17,8 @@ genericMetod.GetFirstItem(stringItems);
 
 #region Task_2
 
-Flower rose = new Rose("Rose", "Black", 10);
-Flower chamomile = new Chamomile("Chamomile", "White", 5);
+Rose rose = new Rose("Rose", "Black", 10);
+Chamomile chamomile = new Chamomile("Chamomile", "White", 5);
 
 Console.WriteLine("Enter the number of rose flowers:");
 int numberOfRose = int.Parse(Console.ReadLine());
@@ -28,20 +28,23 @@ int numberOfChamomile = int.Parse(Console.ReadLine());
 
 Console.WriteLine($"Final chek:");
 
-Console.WriteLine($"Name: {rose.Name}; Color: {rose.Color}; Price: {rose.Price}; " +
-    $"BouquetPrice: {GetPrice(rose, numberOfRose)}");
+Console.WriteLine(StringCheck(rose));
+Console.WriteLine(StringCheck(chamomile));
 
-Console.WriteLine($"Name: {chamomile.Name}; Color: {chamomile.Color}; Price: {chamomile.Price}; " +
-    $"BouquetPrice: {GetPrice(chamomile, numberOfChamomile)}");
+Console.WriteLine($"Total payable: {FinalCheck()}");
 
-Console.WriteLine($"Total payable: {FinalCheck(GetPrice(rose, numberOfRose), GetPrice(chamomile, numberOfChamomile))}");
+string StringCheck<T>(T flower) where T : Flower
+{
+    return $"Name: {flower.Name}; Color: {flower.Color}; Price: {flower.Price};" +
+        $"BouquetPrice: {GetPrice(flower, numberOfRose)}";
+}
 
 double GetPrice<T>(T flower, int number) where T : Flower
 {
     return flower.Price * number;
 }
 
-double FinalCheck<T>(T flower, T number)
+double FinalCheck()
 {
     return GetPrice(rose, numberOfRose) + GetPrice(chamomile, numberOfChamomile);
 }
@@ -50,8 +53,8 @@ double FinalCheck<T>(T flower, T number)
 
 #region Task_3
 
-Flower newRose = new Rose("Rose", "Black", 10);
-Flower newChamomile = new Chamomile("Chamomile", "White", 5);
+Rose newRose = new Rose("Rose", "Black", 10);
+Chamomile newChamomile = new Chamomile("Chamomile", "White", 5);
 
 Console.WriteLine("Enter a color to repaint the rose:");
 var colorOfRose = Console.ReadLine();
@@ -78,15 +81,15 @@ Console.WriteLine($"Name: {newChamomile.Name}; {printNewColorChamomile.GetNewCol
 #region Task_4
 
 Car oneCar = new Car("BMW", "Black", 2022, 10, 50.000);
-Car twoCar = new Car("Audi", "White", 2000, 5, 30.000);
-Car threeCar = new Car("VW", "Blue", 1996, 3, 15.000);
 
 oneCar.PrintYearOfIssue();
 oneCar.PrintPrice();
 oneCar.PrintBrand();
-
-var carList = new List<Car>() { oneCar, twoCar, threeCar };
-carList.GetCarBrand();
+oneCar.GetCarBrand();
 
 #endregion
+
+
+
+
 

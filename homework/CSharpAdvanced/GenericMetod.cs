@@ -5,7 +5,7 @@ namespace CSharpAdvanced
     {
         public void GetFirstItem<T>(T[] array)
         {
-            Console.WriteLine(array[0]);
+            Console.WriteLine(array.FirstOrDefault());
         }
     }
 }
