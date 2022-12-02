@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpOOP2\CSharpOOP2.csproj" />
+  </ItemGroup>
+
 </Project>
