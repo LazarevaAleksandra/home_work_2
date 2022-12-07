@@ -1,16 +1,16 @@
 ﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
-namespace CalculatorMSTests
+
+namespace CalculatorNUnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class SubtractionOfNegativeNumbersTest
     {
-        [DataTestMethod]
-        [DataRow(-5, -3, -2)]
-        [DataRow(-40, -75, 35)]
-        [DataRow(-215, -375, 160)]
-        public void Test_SubtractionOfNegativeNumbers(double numberOne, 
+        [TestCase(-5, -3, -2)]
+        [TestCase(-40, -75, 35)]
+        [TestCase(-215, -375, 160)]
+        public void Test_SubtractionOfNegativeNumbers(double numberOne,
             double numberTwo, double expectedResult)
         {
             var substract = new Calculator();
