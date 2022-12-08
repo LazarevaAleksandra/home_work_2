@@ -17,5 +17,18 @@ namespace CalculatorMSTests
 
             Assert.AreEqual(expectedResult, result);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "Error!")]
+        public void SquareRootOfANegativeNumberTest()
+        {
+            double numberOne = -5;
+
+            var squareRoot = new Calculator();
+
+            double result = squareRoot.Sqrt(numberOne);
+
+            Assert.ThrowsException<Exception>(() => result);
+        }
     }
 }
