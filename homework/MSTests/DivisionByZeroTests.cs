@@ -4,12 +4,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalculatorMSTests
 {
     [TestClass]
-    public class DivisionByZeroTest
+    public class DivisionByZeroTests
     {
         [TestMethod]
         [ExpectedException(typeof(DivideByZeroException),
         "You can't divide by 0!")]
-        public void Test_DivizionByZero()
+        public void DivizionByZeroTest()
         {
             double numberOne = 5;
             double numberTwo = 0;

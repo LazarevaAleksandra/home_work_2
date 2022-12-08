@@ -4,10 +4,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalculatorMSTests
 {
     [TestClass]
-    public class SquareRootTest
+    public class SquareRootTests
     {
         [TestMethod]
-        public void Test_SquareRoot()
+        public void SquareRootTest()
         {
             double numberOne = 5;
             double expectedResult = 2.23606797749979;

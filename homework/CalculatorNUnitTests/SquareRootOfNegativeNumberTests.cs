@@ -7,7 +7,7 @@ namespace CalculatorNUnitTests
     public class SquareRootOfANegativeNumberTest
     {
         [Test]
-        public void Test_SquareRootOfANegativeNumber()
+        public void SquareRootOfANegativeNumberTest()
         {
             double numberOne = -5;
             var expectedResult = typeof(Exception);

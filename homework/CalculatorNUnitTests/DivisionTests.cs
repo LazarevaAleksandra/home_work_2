@@ -5,10 +5,10 @@ using NUnit.Framework;
 namespace CalculatorNUnitTests
 {
     [TestFixture]
-    public class DivisionTest
+    public class DivisionTests
     {
         [Test]
-        public void Test_Division()
+        public void DivisionTest()
         {
             double numberOne = 45;
             double numberTwo = 5;

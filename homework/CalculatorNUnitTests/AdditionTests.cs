@@ -4,10 +4,10 @@ using NUnit.Framework;
 namespace CalculatorNUnitTests
 {
     [TestFixture]
-    public class AdditionTest
+    public class AdditionTests
     {
         [Test]
-        public void Test_Addition()
+        public void AdditionTest()
         {
             double numberOne = 2.5;
             double numberTwo = 3.4;

@@ -4,10 +4,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalculatorMSTests
 {
     [TestClass]
-    public class MultiplicationTest
+    public class MultiplicationTests
     {
         [TestMethod]
-        public void Test_Multiplication()
+        public void MultiplicationTest()
         {
             double numberOne = 5;
             double numberTwo = 10;

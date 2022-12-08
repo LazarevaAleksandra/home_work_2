@@ -5,12 +5,12 @@ using NUnit.Framework;
 namespace CalculatorNUnitTests
 {
     [TestFixture]
-    public class SubtractionOfNegativeNumbersTest
+    public class SubtractionOfNegativeNumbersTests
     {
         [TestCase(-5, -3, -2)]
         [TestCase(-40, -75, 35)]
         [TestCase(-215, -375, 160)]
-        public void Test_SubtractionOfNegativeNumbers(double numberOne,
+        public void SubtractionOfNegativeNumbersTest(double numberOne,
             double numberTwo, double expectedResult)
         {
             var substract = new Calculator();

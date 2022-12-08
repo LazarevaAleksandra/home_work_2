@@ -4,10 +4,10 @@ using NUnit.Framework;
 namespace CalculatorNUnitTests
 {
     [TestFixture]
-    public class MultiplicationTest
+    public class MultiplicationTests
     {
         [Test]
-        public void Test_Multiplication()
+        public void MultiplicationTest()
         {
             double numberOne = 5;
             double numberTwo = 10;

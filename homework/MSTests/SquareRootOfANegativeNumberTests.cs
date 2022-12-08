@@ -4,11 +4,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalculatorMSTests
 {
     [TestClass]
-    public class SquareRootOfANegativeNumberTest
+    public class SquareRootOfANegativeNumberTests
     { 
         [TestMethod]
         [ExpectedException(typeof(Exception), "Error!")]
-        public void Test_SquareRootOfANegativeNumber()
+        public void SquareRootOfANegativeNumberTest()
         {
             double numberOne = -5;
 

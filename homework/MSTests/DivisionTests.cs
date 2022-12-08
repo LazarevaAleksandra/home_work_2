@@ -4,10 +4,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalculatorMSTests
 {
     [TestClass]
-    public class DivisionTest
+    public class DivisionTests
     {
         [TestMethod]
-        public void Test_Division()
+        public void DivisionTest()
         {
             double numberOne = 45;
             double numberTwo = 5;
