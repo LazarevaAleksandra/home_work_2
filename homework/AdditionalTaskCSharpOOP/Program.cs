@@ -10,7 +10,7 @@ additional.GetABankTransaction(100, "EUR", 3.5);
 additional.GetNumbers(1);
 additional.GetNumbers(1, 2);
 additional.GetNumbers(1, 2, 3);
-//Четвертый не нашла.
+additional.GetNumbers(1, numberThree: 1);
 
 //Task_3
 Console.WriteLine("Enter chars");

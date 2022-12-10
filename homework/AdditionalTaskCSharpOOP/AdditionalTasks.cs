@@ -4,15 +4,15 @@ namespace AdditionalTaskCSharpOOP
     public class AdditionalTasks
     {
         //Task_1
-        public double CurrencyConverter(double byn, double usd)
+        public double ConvertCurrency(double byn, double exchangeRate)
         {
-            return byn / usd;
+            return byn / exchangeRate;
         }
 
-        public void GetABankTransaction(double byn, string currency, double usd)
+        public void GetABankTransaction(double byn, string currency, double exchangeRate)
         {
             Console.WriteLine($"Conversion result {currency}: {byn}BYN in {currency}: " +
-                $"{CurrencyConverter(byn, usd)}{currency}");
+                $"{ConvertCurrency(byn, exchangeRate)}{currency}");
         }
 
         //Task_2
