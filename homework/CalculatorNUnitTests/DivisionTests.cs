@@ -1,12 +1,19 @@
 ﻿using CSharpCalculator;
 using NUnit.Framework;
-
+using System.Runtime.CompilerServices;
 
 namespace CalculatorNUnitTests
-{
+{ 
     [TestFixture]
     public class DivisionTests
     {
+        private Calculator _division;
+
+        [SetUp]
+        public void DivisionInicialize()
+        {
+            _division = new Calculator();
+        }
         [Test]
         public void DivisionTest()
         {
@@ -14,8 +21,7 @@ namespace CalculatorNUnitTests
             double numberTwo = 5;
             double expectedResult = 9;
 
-            var division = new Calculator();
-            double result = division.Divide(numberOne, numberTwo);
+            double result = _division.Divide(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }
@@ -28,10 +34,8 @@ namespace CalculatorNUnitTests
         public void DivisionByZeroTest(double numberOne,
             double numberTwo, Type expectedResult)
         {
-            var divisionByZero = new Calculator();
-
             Assert.Throws(expectedResult, () =>
-            divisionByZero.Divide(numberOne, numberTwo));
+            _division.Divide(numberOne, numberTwo));
         }
 
         [Test]
@@ -41,9 +45,7 @@ namespace CalculatorNUnitTests
         public void DivisionOfFractionalNumbersTest(double numberOne,
             double numberTwo, double expectedResult)
         {
-            var division = new Calculator();
-
-            double result = division.Divide(numberOne, numberTwo);
+            double result = _division.Divide(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }

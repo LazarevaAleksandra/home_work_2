@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CalculatorMSTests
-{
+{  
     [TestClass]
     public class DivisionTests
     {
