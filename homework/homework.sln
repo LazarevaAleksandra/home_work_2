@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorMSTests", "MSTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorNUnitTests", "CalculatorNUnitTests\CalculatorNUnitTests.csproj", "{4AE32B40-2E91-4F74-A014-9EEAB6DE28C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTaskCSharpOOP", "AdditionalTaskCSharpOOP\AdditionalTaskCSharpOOP.csproj", "{4095C57A-9697-403C-BFA6-4CF20BC45F14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{4AE32B40-2E91-4F74-A014-9EEAB6DE28C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE32B40-2E91-4F74-A014-9EEAB6DE28C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE32B40-2E91-4F74-A014-9EEAB6DE28C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
