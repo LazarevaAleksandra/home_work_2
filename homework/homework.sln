@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCollection1", "CSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpAdvanced", "CSharpAdvanced\CSharpAdvanced.csproj", "{C5DEAC99-6990-49A1-9117-82DDC02C0519}"
 EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_Basics", "Selenium_Basics\Selenium_Basics.csproj", "{5B8F18CF-AE13-496C-8738-31DB028786A0}"
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTaskCSharpOOP", "AdditionalTaskCSharpOOP\AdditionalTaskCSharpOOP.csproj", "{4095C57A-9697-403C-BFA6-4CF20BC45F14}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +81,17 @@ Global
 		{C5DEAC99-6990-49A1-9117-82DDC02C0519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DEAC99-6990-49A1-9117-82DDC02C0519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DEAC99-6990-49A1-9117-82DDC02C0519}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{5B8F18CF-AE13-496C-8738-31DB028786A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B8F18CF-AE13-496C-8738-31DB028786A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8F18CF-AE13-496C-8738-31DB028786A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8F18CF-AE13-496C-8738-31DB028786A0}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
