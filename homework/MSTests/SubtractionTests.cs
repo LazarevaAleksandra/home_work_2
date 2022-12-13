@@ -6,6 +6,14 @@ namespace CalculatorMSTests
     [TestClass]
     public class SubtractionTests
     {
+        private Calculator _substraction;
+
+        [TestInitialize]
+        public void SubstractionInicialize()
+        {
+            _substraction = new Calculator();
+        }
+
         //The test failed on the subtraction of fractional numbers
         //(Expected:<2,4>. Actual:<2,4000000000000004>).
 
@@ -16,8 +24,7 @@ namespace CalculatorMSTests
             double numberTwo = 3;
             double expectedResult = 2.4;
 
-            var substraction = new Calculator();
-            double result = substraction.Sub(numberOne, numberTwo);
+            double result = _substraction.Sub(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }
@@ -29,9 +36,7 @@ namespace CalculatorMSTests
         public void SubtractionOfNegativeNumbersTest(double numberOne,
             double numberTwo, double expectedResult)
         {
-            var substract = new Calculator();
-
-            double result = substract.Sub(numberOne, numberTwo);
+            double result = _substraction.Sub(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }

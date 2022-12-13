@@ -6,6 +6,14 @@ namespace CalculatorMSTests
     [TestClass]
     public class DivisionTests
     {
+        private Calculator _division;
+
+        [TestInitialize]
+        public void DivisionInicialize()
+        {
+            _division = new Calculator();
+        }
+
         [TestMethod]
         public void DivisionTest()
         {
@@ -13,8 +21,7 @@ namespace CalculatorMSTests
             double numberTwo = 5;
             double expectedResult = 9;
 
-            var division = new Calculator();
-            double result = division.Divide(numberOne, numberTwo);
+            double result = _division.Divide(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }
@@ -27,14 +34,12 @@ namespace CalculatorMSTests
             double numberOne = 5;
             double numberTwo = 0;
 
-            var divisionByZero = new Calculator();
-
             if (numberTwo == 0.0)
                 throw new DivideByZeroException();
             Console.WriteLine(numberOne / numberTwo);
 
             Assert.ThrowsException<DivideByZeroException>(() =>
-            divisionByZero.Divide(numberOne, numberTwo));
+            _division.Divide(numberOne, numberTwo));
         }
 
         [DataTestMethod]
@@ -43,10 +48,8 @@ namespace CalculatorMSTests
         [DataRow(12.8, 5.4, 2.3703703703703702)]
         public void DivisionOfFractionalNumbersTest(double numberOne,
             double numberTwo, double expectedResult)
-        {
-            var division = new Calculator();
-
-            double result = division.Divide(numberOne, numberTwo);
+        { 
+            double result = _division.Divide(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }

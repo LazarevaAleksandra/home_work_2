@@ -14,6 +14,7 @@ namespace CalculatorNUnitTests
         {
             _division = new Calculator();
         }
+
         [Test]
         public void DivisionTest()
         {

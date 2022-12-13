@@ -6,6 +6,14 @@ namespace CalculatorMSTests
     [TestClass]
     public class MultiplicationTests
     {
+        private Calculator _multiplication;
+
+        [TestInitialize]
+        public void MultiplicationInicialize()
+        {
+            _multiplication = new Calculator();
+        }
+
         [TestMethod]
         public void MultiplicationTest()
         {
@@ -13,8 +21,7 @@ namespace CalculatorMSTests
             double numberTwo = 10;
             double expectedResult = 50;
 
-            var multiplication = new Calculator();
-            double result = multiplication.Multiply(numberOne, numberTwo);
+            double result = _multiplication.Multiply(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }
@@ -26,9 +33,7 @@ namespace CalculatorMSTests
         public void MultiplicationOfNegativeNumbersTest(double numberOne,
             double numberTwo, double expectedResult)
         {
-            var multiplication = new Calculator();
-
-            double result = multiplication.Multiply(numberOne, numberTwo);
+            double result = _multiplication.Multiply(numberOne, numberTwo);
 
             Assert.AreEqual(expectedResult, result);
         }
