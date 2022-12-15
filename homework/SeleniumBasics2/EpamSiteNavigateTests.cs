@@ -1,8 +1,6 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
 namespace SeleniumBasics2
 {
@@ -11,7 +9,7 @@ namespace SeleniumBasics2
     {
         private IWebDriver _driver;
         private const string link = "https://www.epam.com/";
-
+        
         [SetUp]
         public void InicializeBrowser()
         {
@@ -55,10 +53,11 @@ namespace SeleniumBasics2
 
             Assert.That(_driver.Url, Is.EqualTo(linkBA), "Incorrect url is present!");
 
-            var title = _driver.FindElement(By.XPath("//*[@class = 'search-results__title']"));
+            var title = _driver.FindElement(By.XPath("//*[@class = 'search-results__title-link']")).GetAttribute("innerText");
             _driver.FindElement(By.XPath("//*[@class = 'search-results__title-link']")).Click();
-          
-            Assert.AreEqual(_driver.Title, title.Text);
+            var titleBA =_driver.FindElement(By.XPath("//*[@class='title__bottom-line']//h1")).Text;
+
+            Assert.AreEqual(titleBA, title);
         }
 
         [TearDown]
@@ -68,3 +67,10 @@ namespace SeleniumBasics2
         }
     }
 }
+
+//Locators:
+//1. //video
+//2. //*[@id="main"]/following-sibling::div    //*[@id="main"]/preceding-sibling::div
+//3  //*[@id="main"]/parent::div 
+//4. //*[@id="main"]/first::div        //*[@id="main"]/last::div 
+//5. .//*[@id="wrapper"]
