@@ -17,7 +17,7 @@ namespace Selenium_Basics
         }
 
         [Test]
-        public void CheckBrowserPageTest()
+        public void CheckNavigationToMainEpamPage()
         {
             var link = "https://www.epam.com/";
 
@@ -27,7 +27,7 @@ namespace Selenium_Basics
         }
 
         [Test]
-        public void CheckPageAfterReloadTest()
+        public void CheckWeDoItPageIsOpenedAfterMoveAndReload()
         {
             var linkHoWeDoIt = "https://www.epam.com/how-we-do-it";
             var linkOurWork = "https://www.epam.com/our-work";
