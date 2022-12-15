@@ -1,30 +1,30 @@
 ﻿using CSharpOOP3;
 
-//string name = "Ball";
-//double radius = 5;
-//Ball ball = new Ball(name, radius);
+string name = "Ball";
+double radius = 5;
+Ball ball = new Ball(name, radius);
 
-//ball.GetShape();
+ball.GetShape();
 
-//string name = "Pyramid";
-//double height = 7;
-//double s = 20;
-//Pyramid pyramid = new Pyramid(name, height, s);
+string name1 = "Pyramid";
+double height2 = 7;
+double s = 20;
+Pyramid pyramid = new Pyramid(name1, height2, s);
 
-//pyramid.GetShape();
+pyramid.GetShape();
 
-//string name = "Cylinder";
-//double radius = 7;
-//double height = 10;
-//Cylinder cylinder = new Cylinder(name, height, radius);
+string name2 = "Cylinder";
+double radius2 = 7;
+double height3 = 10;
+Cylinder cylinder = new Cylinder(name2, height3, radius2);
 
-//cylinder.GetShape();
+cylinder.GetShape();
 
-//Student student = new Student();
-//student.Name = "Alex";
-//student.Age = 20;
+Student student = new Student();
+student.Name = "Alex";
+student.Age = 20;
 
-//student.InfoOfStudent();
+student.InfoOfStudent();
 
 
 
