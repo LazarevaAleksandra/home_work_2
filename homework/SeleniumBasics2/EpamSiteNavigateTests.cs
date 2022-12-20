@@ -23,11 +23,13 @@ namespace SeleniumBasics2
         [Test]
         public void CheckTheListOfCountriesInTheCareerButtonTest()
         {
+            var countries = new List<string> { "AMERICAS", "EMEA", "APAC" };
             _driver.FindElement(By.XPath("//*[@href = '/careers']")).Click();
             var careerOffice = _driver.FindElement(By.XPath("//*[@class='tabs__ul js-tabs-links-list']"));
-            var careerElements = careerOffice.FindElements(By.XPath(".//div"));
+            var careerElements = careerOffice.FindElements(By.XPath(".//div")).Select(item => item.GetAttribute("innerText"));
 
             Assert.That(careerElements.Count(), Is.EqualTo(3), "Invalid number of countries!");
+            Assert.That(careerElements, Is.EqualTo(countries), "Incorrect country name!");
         }
 
         [Test]
@@ -38,11 +40,11 @@ namespace SeleniumBasics2
             _driver.FindElement(By.XPath("//*[@class = 'header-search__button header__icon']")).Click();
             _driver.FindElement(By.XPath("//*[@id='new_form_search']")).SendKeys("Automation");
             _driver.FindElement(By.XPath("//*[@class = 'header-search__submit']")).Click();
-            _driver.FindElement(By.XPath("//*[@class = 'search-results__items']"));
-            _driver.FindElement(By.XPath(".//*[@class = 'search-results__item']")).Equals(5);
+            var articles = _driver.FindElements(By.XPath("//*[@class = 'search-results__item']")).Take(5)
+                .Select(item => item.Text);
 
             Assert.That(_driver.Url, Is.EqualTo(linkAutomation), "Incorrect url is present!");
-            Assert.True(_driver.PageSource.Contains("Automation"));
+            Assert.That(articles, Is.All.Contain("Automation").IgnoreCase, "This word is not in the article!");
         }
 
         [Test]
@@ -63,7 +65,7 @@ namespace SeleniumBasics2
             titleOfTheFirstArticle.Click();
             var titleBusinessAnalysis = _driver.FindElement(By.XPath("//*[@class='layout-box__wrapper']//h1")).GetAttribute("innerText");
 
-            Assert.AreEqual(titleBusinessAnalysis, title);
+            Assert.AreEqual(titleBusinessAnalysis, title, "Incorrect title is present!");
         }
 
         [TearDown]
@@ -75,7 +77,7 @@ namespace SeleniumBasics2
 }
 
 //Locators:
-//1. //video
+//1. //*[@class='tabs__ul js-tabs-links-list' and contains (@role, "tablist")] 
 //2. //*[@id="main"]/following-sibling::div    //*[@id="main"]/preceding-sibling::div
 //3  //*[@id="main"]/parent::div 
 //4. //*[@id="main"]/first::div        //*[@id="main"]/last::div 
