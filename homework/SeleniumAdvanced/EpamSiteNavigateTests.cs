@@ -14,7 +14,7 @@ namespace SeleniumAdvanced
         private IWebDriver _driver;
         private WebDriverWait _waiter;
         private Actions _action;
-        private IJavaScriptExecutor _javaScriptExecutor;
+        private IJavaScriptExecutor? _javaScriptExecutor;
         private const string link = "https://www.epam.com";
         
 
@@ -24,6 +24,7 @@ namespace SeleniumAdvanced
             _driver = new ChromeDriver();
             _waiter = new WebDriverWait(_driver, TimeSpan.FromSeconds(20));
             _action = new Actions(_driver);
+            _javaScriptExecutor = _driver as IJavaScriptExecutor;
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl(link);
             _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(40);
@@ -61,7 +62,7 @@ namespace SeleniumAdvanced
         [Test]
         public void CheckSeeMoreThan20Articles()
         {
-            _driver.FindElement(By.XPath("//*[@class='header-search__button header__icon']")).Click();
+            _javaScriptExecutor.ExecuteScript("arguments[0].click()", _driver.FindElement(By.XPath("//*[@class='header-search__button header__icon']")));
             _driver.FindElement(By.XPath("//*[@class='frequent-searches__item' and contains(text(), 'Cloud')]")).Click();
             _driver.FindElement(By.XPath("//*[@class='header-search__submit']")).Click();
             _action.ScrollToElement(_driver.FindElement(By.XPath("//*[@class='search-results__footer']"))).Perform();
@@ -76,6 +77,3 @@ namespace SeleniumAdvanced
         }
     }     
 }
-// Вписала в последний тест, и он упал. Вынесла отдельно.
-//_javaScriptExecutor.ExecuteScript("arguments[0].click()", _driver.FindElement
-//(By.XPath("//*[@class='header-search__button header__icon']")));
