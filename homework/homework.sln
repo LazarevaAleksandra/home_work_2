@@ -34,12 +34,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorNUnitTests", "Cal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTaskCSharpOOP", "AdditionalTaskCSharpOOP\AdditionalTaskCSharpOOP.csproj", "{4095C57A-9697-403C-BFA6-4CF20BC45F14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumAdvanced", "SeleniumAdvanced\SeleniumAdvanced.csproj", "{8F1B5093-B840-4FCD-8B7F-2F72BF9185C6}"
+
+
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTaskCSharpOOP", "AdditionalTaskCSharpOOP\AdditionalTaskCSharpOOP.csproj", "{4095C57A-9697-403C-BFA6-4CF20BC45F14}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumBasics2", "SeleniumBasics2\SeleniumBasics2.csproj", "{D54A7CC5-6247-4203-9644-D528771F4ADF}"
 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTaskCSharpOOP", "AdditionalTaskCSharpOOP\AdditionalTaskCSharpOOP.csproj", "{4095C57A-9697-403C-BFA6-4CF20BC45F14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTest", "SeleniumTest\SeleniumTest.csproj", "{EAB28D02-5C80-4F24-BDE6-F3CEE8475EE3}"
+
 
 EndProject
 Global
@@ -109,6 +116,12 @@ Global
 		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4095C57A-9697-403C-BFA6-4CF20BC45F14}.Release|Any CPU.Build.0 = Release|Any CPU
 
+    {8F1B5093-B840-4FCD-8B7F-2F72BF9185C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1B5093-B840-4FCD-8B7F-2F72BF9185C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1B5093-B840-4FCD-8B7F-2F72BF9185C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1B5093-B840-4FCD-8B7F-2F72BF9185C6}.Release|Any CPU.Build.0 = Release|Any CPU
+
+
 		{D54A7CC5-6247-4203-9644-D528771F4ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D54A7CC5-6247-4203-9644-D528771F4ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D54A7CC5-6247-4203-9644-D528771F4ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -118,6 +131,7 @@ Global
 		{EAB28D02-5C80-4F24-BDE6-F3CEE8475EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAB28D02-5C80-4F24-BDE6-F3CEE8475EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAB28D02-5C80-4F24-BDE6-F3CEE8475EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+
 
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
